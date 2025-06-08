@@ -1,0 +1,215 @@
+html,
+body,
+#root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #28293F;
+    width: 100vw;
+    height: 100vh;
+    background-color: #E6E6E6;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Montserrat", sans-serif;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+}
+
+li {
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.container-logo {
+    margin: 4rem 0 0 0;
+}
+
+.logo {
+    width: 25rem;
+}
+
+.title {
+    font-size: 2.3rem;
+}
+
+.text{
+    font-size: 1.5rem;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    margin-left: 5rem;
+}
+
+.list-item {
+    font-size: 1.3rem;
+}
+
+.container-social-media {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.link-social {
+    text-decoration: none;
+}
+
+.logo-social {
+    width: 4rem;
+}
+
+/* RESPONSIVIDADE */
+
+/* Telas muito pequenas (smartphones pequenos, <= 480px) */
+@media (max-width: 480px) {
+    .logo {
+        width: 12rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .text {
+        font-size: 1rem;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .list {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .list-item {
+        font-size: 1rem;
+    }
+
+    .logo-social {
+        width: 2.5rem;
+    }
+}
+
+/* Smartphones médios e tablets em modo retrato (481px a 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+    .logo {
+        width: 16rem;
+    }
+
+    .title {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .text {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .list {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .list-item {
+        font-size: 1.1rem;
+    }
+
+    .logo-social {
+        width: 3rem;
+    }
+}
+
+/* Tablets em modo paisagem e telas pequenas (768px a 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .logo {
+        width: 20rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .text {
+        font-size: 1.3rem;
+    }
+
+    .list {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+    .list-item {
+        font-size: 1.2rem;
+    }
+
+    .logo-social {
+        width: 3.5rem;
+    }
+}
+
+/* Laptops e desktops médios (1025px a 1439px) */
+@media (min-width: 1025px) and (max-width: 1439px) {
+    .logo {
+        width: 22rem;
+    }
+
+    .title {
+        font-size: 2.2rem;
+    }
+
+    .text {
+        font-size: 1.4rem;
+    }
+
+    .list-item {
+        font-size: 1.2rem;
+    }
+
+    .logo-social {
+        width: 3.8rem;
+    }
+}
+
+/* Telas grandes (1440px ou mais) */
+@media (min-width: 1440px) {
+    .logo {
+        width: 25rem;
+    }
+
+    .title {
+        font-size: 2.3rem;
+    }
+
+    .text {
+        font-size: 1.5rem;
+    }
+
+    .list-item {
+        font-size: 1.3rem;
+    }
+
+    .logo-social {
+        width: 4rem;
+    }
+}
